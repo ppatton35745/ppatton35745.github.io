@@ -9,7 +9,7 @@ const Home = props => {
         <h1 className="display-3">Philip Patton</h1>
         <p className="lead">Full Stack Software Developer</p>
         <hr className="my-2" />
-        <p>Site is under Construction</p>
+        <p>Site is under Construction 2255</p>
       </Jumbotron>
       <TechIcons />
     </div>
