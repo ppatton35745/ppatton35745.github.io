@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ppatton35745.github.io/ppatton35745.github.io",
+  "homepage": "http://philpatton.net",
   "name": "my-site",
   "version": "0.1.0",
   "private": true,
@@ -14,12 +14,12 @@
     "reactstrap": "^6.5.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
