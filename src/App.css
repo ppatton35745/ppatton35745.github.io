@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+
+.techLogoSVG img {
+  height: 85%;
+  width: 85%;
+}
