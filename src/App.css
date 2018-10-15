@@ -34,4 +34,34 @@
 .techLogoSVG img {
   height: 85%;
   width: 85%;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.section-head {
+  text-align: center;
+  border-bottom-style: solid;
+  margin-bottom: 2rem;
+}
+
+.content-nav-link {
+  padding-top: 3.5rem;
+}
+
+.headshot {
+  width: 20%;
+  max-width: 200px;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
+.jumbotron {
+  margin-top: 15px;
+}
+
+#techs {
+  margin-bottom: 3.5rem;
 }

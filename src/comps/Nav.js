@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink
+  NavItem
 } from "reactstrap";
-import { NavLink as RRNavLink } from "react-router-dom";
+import { NavLink } from "reactstrap";
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -28,37 +26,29 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" dark light expand="md">
-          <NavbarBrand href="/">Phil Patton</NavbarBrand>
+        <Navbar color="dark" dark light expand="md" fixed="top">
+          <NavbarBrand href="/#home">Phil Patton</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink exact to="/" tag={RRNavLink}>
+                <NavLink to="/" href="#home">
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about" activeClassName="active" tag={RRNavLink}>
-                  About
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  to="/experience"
-                  activeClassName="active"
-                  tag={RRNavLink}
-                >
+                <NavLink to="/" href="#exp">
                   Experience
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  to="/projects"
-                  activeClassName="active"
-                  tag={RRNavLink}
-                >
+                <NavLink to="/" href="#proj">
                   Projects
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/" href="#techs">
+                  Technologies
                 </NavLink>
               </NavItem>
             </Nav>

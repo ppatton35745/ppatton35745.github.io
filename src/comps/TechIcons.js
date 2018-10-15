@@ -4,7 +4,15 @@ import { Container, Row, Col } from "reactstrap";
 export default class TechIcons extends React.Component {
   render() {
     return (
-      <Container className="container-fluid techLogoSVG">
+      <Container
+        id="techs"
+        className="container-fluid techLogoSVG content-nav-link"
+      >
+        <Row>
+          <Col>
+            <h2 className="section-head">Technologies</h2>
+          </Col>
+        </Row>
         <Row>
           <Col>
             <img src="./img/dotnet.svg" alt="dotnet logo" />
