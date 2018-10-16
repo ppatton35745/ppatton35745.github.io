@@ -1,6 +1,23 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
+const images = [
+  ["./img/dotnet.svg", "dotnet logo"],
+  ["./img/bootstrap.svg", "bootrasp logo"],
+  ["./img/C_Sharp.svg", "C Sharp logo"],
+  ["./img/css-3.svg", "CSS logo"],
+  ["./img/git-icon.svg", "git logo"],
+  ["./img/github-icon.svg", "github logo"],
+  ["./img/grunt.svg", "grunt logo"],
+  ["./img/html-5.svg", "html logo"],
+  ["./img/javascript.svg", "javascript logo"],
+  ["./img/jquery.svg", "jquery logo"],
+  ["./img/microsoft-sql-server.svg", "microsoft-sql-server logo"],
+  ["./img/npm.svg", "npm logo"],
+  ["./img/react.svg", "react logo"],
+  ["./img/browserify-icon.svg", "browserify logo"]
+];
+
 export default class TechIcons extends React.Component {
   render() {
     return (
@@ -13,56 +30,11 @@ export default class TechIcons extends React.Component {
             <h2 className="section-head">Technologies</h2>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <img src="./img/dotnet.svg" alt="dotnet logo" />
-          </Col>
-          <Col>
-            <img src="./img/bootstrap.svg" alt="bootrasp logo" />
-          </Col>
-          <Col>
-            <img src="./img/C_Sharp.svg" alt="C Sharp logo" />
-          </Col>
-          <Col>
-            <img src="./img/css-3.svg" alt="CSS logo" />
-          </Col>
-          <Col>
-            <img src="./img/git-icon.svg" alt="git logo" />
-          </Col>
-          <Col>
-            <img src="./img/github-icon.svg" alt="github logo" />
-          </Col>
-          <Col>
-            <img src="./img/grunt.svg" alt="gru t logo" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <img src="./img/html-5.svg" alt="html logo" />
-          </Col>
-          <Col>
-            <img src="./img/javascript.svg" alt="javascript logo" />
-          </Col>
-
-          <Col>
-            <img src="./img/jquery.svg" alt="jquery logo" />
-          </Col>
-          <Col>
-            <img
-              src="./img/microsoft-sql-server.svg"
-              alt="microsoft-sql-server logo"
-            />
-          </Col>
-          <Col>
-            <img src="./img/npm.svg" alt="npm logo" />
-          </Col>
-          <Col>
-            <img src="./img/react.svg" alt="react logo" />
-          </Col>
-          <Col>
-            <img src="./img/browserify-icon.svg" alt="browserify logo" />
-          </Col>
-        </Row>
+        <div id="tech-logos">
+          {images.map(pic => (
+            <img key={pic[0]} src={pic[0]} alt={pic[1]} />
+          ))}
+        </div>
       </Container>
     );
   }

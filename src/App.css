@@ -31,11 +31,49 @@
   }
 }
 
-.techLogoSVG img {
-  height: 85%;
-  width: 85%;
-  min-height: 20px;
-  min-width: 20px;
+.proj-block {
+  background-color: #e9ecef;
+  margin: 0;
+}
+
+.container {
+  padding-bottom: 50px;
+}
+
+#tech-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 200px) {
+  .techLogoSVG img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 500px) {
+  .techLogoSVG img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .techLogoSVG img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .techLogoSVG img {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 .section-head {
@@ -48,11 +86,6 @@
   padding-top: 3.5rem;
 }
 
-.headshot {
-  width: 20%;
-  max-width: 200px;
-}
-
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -60,8 +93,89 @@
 
 .jumbotron {
   margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 #techs {
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.name-and-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85vw;
+  margin: auto;
+}
+
+.img-div {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbo-name {
+  width: 100%;
+}
+
+.img-div {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .jumbo-name {
+    width: 50%;
+  }
+
+  .img-div {
+    width: 50%;
+  }
+
+  .headshot {
+    height: 400px;
+  }
+}
+
+#footer {
+  margin: 0;
+  height: 100px;
+  background-color: #343a40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#footer-icons {
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-icons img {
+  height: 40px;
+  width: 40px;
+  margin: 10px 30px;
+  fill: white;
+}
+
+.webfonts {
+  color: white;
+  text-decoration: none;
+  font-size: 0.6rem;
 }

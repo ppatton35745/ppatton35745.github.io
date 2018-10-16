@@ -1,51 +1,24 @@
-import React, { Component } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem
-} from "reactstrap";
-import { NavLink } from "reactstrap";
+import React from "react";
 
-export default class Footer extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
-        <Navbar color="dark" dark light expand="md" fixed="bottom">
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink to="/" href="#home">
-                Git
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/" href="#exp">
-                LinkedIn
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/" href="#proj">
-                Email
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Navbar>
+const Footer = props => {
+  return (
+    <div id="footer">
+      <div id="footer-icons">
+        <a href="mailto:ppatton35745@gmail.com">
+          <img src="./img/email-webfont.svg" alt="email" />
+        </a>
+        <a href="https://github.com/ppatton35745">
+          <img src="./img/github-webfont.svg" alt="email" />
+        </a>
+        <a href="https://www.linkedin.com/in/philippatton35745/">
+          <img src="./img/linked-in-webfont.svg" alt="email" />
+        </a>
       </div>
-    );
-  }
-}
+      <a className="webfonts" href="http://www.onlinewebfonts.com">
+        oNline Web Fonts
+      </a>
+    </div>
+  );
+};
+
+export default Footer;
