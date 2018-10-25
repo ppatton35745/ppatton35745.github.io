@@ -34,7 +34,7 @@ const Projects = props => {
               <a href="https://ear-ninja.herokuapp.com/">Ear Ninja</a>
             </CardTitle>
             <CardSubtitle>
-              <a href="github.com/ppatton35745/ear-ninja">
+              <a href="https://github.com/ppatton35745/ear-ninja">
                 github.com/ppatton35745/ear-ninja
               </a>
             </CardSubtitle>
